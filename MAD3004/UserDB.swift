@@ -17,7 +17,6 @@ class User{
     fileprivate var eMail: String?
     
     init(){
-        
     }
     
     init(_ userID: String,_ name: String,_ address: String,_ password: String,_ eMail: String){
