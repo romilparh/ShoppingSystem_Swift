@@ -10,7 +10,7 @@ import Foundation
 
 class User{
     var userID: String?
-    
+    var name: String?
     fileprivate var address: String?
     fileprivate var password: String?
     fileprivate var loginStatus: Bool?
@@ -20,8 +20,9 @@ class User{
         
     }
     
-    init(_ userID: String,_ address: String,_ password: String,_ eMail: String){
+    init(_ userID: String,_ name: String,_ address: String,_ password: String,_ eMail: String){
         self.userID = userID
+        self.name = name
         self.address = address
         self.password = password
         self.eMail = eMail
@@ -34,6 +35,16 @@ class User{
     
     fileprivate func verifyLogin() -> Bool{
         return true
+    }
+    
+    func showUserDetails(){
+        print("Name: \(name)")
+        print("eMail: \(eMail)")
+        print("Address: \(address)")
+    }
+    
+    func updateDetails(){
+        // Function to change password or address
     }
 }
 
