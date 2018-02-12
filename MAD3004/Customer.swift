@@ -12,19 +12,21 @@ class Customer: User{
     fileprivate var cardNumber: Int?
     fileprivate var cardExpiry: Date?
     fileprivate var cardCVV: Int?
+    fileprivate var cardType: Character?
     
     override init(){
         super.init()
     }
     
-    init(_ cardNumber: Int,_ cardExpiry: Date,_ cardCVV: Int,_ userID: String){
+    init(_ cardNumber: Int,_ cardExpiry: Date,_ cardCVV: Int,_ cardType: Character,_ userID: String){
         self.cardNumber = cardNumber
         self.cardExpiry = cardExpiry
         self.cardCVV = cardCVV
+        self.cardType = cardType
         super.init(userID)
     }
     
-    func updateProfile(){
+    fileprivate func updateCardInfo(){
         // Pseudo Code: Goes here
     }
     
