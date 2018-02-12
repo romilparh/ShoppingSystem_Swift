@@ -26,7 +26,7 @@ class Customer: User{
         super.init(userID)
     }
     
-    fileprivate func updateCardInfo(_cardNumber: Int,_ cardExpiry: Date,_ cardCVV: Int,_ cardType: Character){
+    fileprivate func updateCardInfo(_ cardNumber: Int,_ cardExpiry: Date,_ cardCVV: Int,_ cardType: Character){
         self.cardNumber = cardNumber
         self.cardExpiry = cardExpiry
         self.cardCVV = cardCVV
