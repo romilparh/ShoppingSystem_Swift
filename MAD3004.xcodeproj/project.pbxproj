@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		18456C7120315AB9007F2CF7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C7020315AB9007F2CF7 /* main.swift */; };
+		18456C7A20315C1D007F2CF7 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C7920315C1D007F2CF7 /* UserDB.swift */; };
+		18456C7C20315E19007F2CF7 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C7B20315E19007F2CF7 /* Customer.swift */; };
+		18456C7E20316015007F2CF7 /* Administrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C7D20316015007F2CF7 /* Administrator.swift */; };
+		18456C80203160EE007F2CF7 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C7F203160EE007F2CF7 /* ShoppingCart.swift */; };
+		18456C822031619D007F2CF7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C812031619D007F2CF7 /* Product.swift */; };
+		18456C8420317729007F2CF7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C8320317729007F2CF7 /* Order.swift */; };
+		18456C8620317A6E007F2CF7 /* ShipmentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C8520317A6E007F2CF7 /* ShipmentInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,13 @@
 /* Begin PBXFileReference section */
 		18456C6D20315AB9007F2CF7 /* MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		18456C7020315AB9007F2CF7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		18456C7920315C1D007F2CF7 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
+		18456C7B20315E19007F2CF7 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		18456C7D20316015007F2CF7 /* Administrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Administrator.swift; sourceTree = "<group>"; };
+		18456C7F203160EE007F2CF7 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		18456C812031619D007F2CF7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		18456C8320317729007F2CF7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		18456C8520317A6E007F2CF7 /* ShipmentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				18456C7020315AB9007F2CF7 /* main.swift */,
+				18456C7920315C1D007F2CF7 /* UserDB.swift */,
+				18456C7B20315E19007F2CF7 /* Customer.swift */,
+				18456C7D20316015007F2CF7 /* Administrator.swift */,
+				18456C7F203160EE007F2CF7 /* ShoppingCart.swift */,
+				18456C812031619D007F2CF7 /* Product.swift */,
+				18456C8320317729007F2CF7 /* Order.swift */,
+				18456C8520317A6E007F2CF7 /* ShipmentInfo.swift */,
 			);
 			path = MAD3004;
 			sourceTree = "<group>";
@@ -120,7 +141,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18456C80203160EE007F2CF7 /* ShoppingCart.swift in Sources */,
+				18456C8620317A6E007F2CF7 /* ShipmentInfo.swift in Sources */,
+				18456C7C20315E19007F2CF7 /* Customer.swift in Sources */,
+				18456C7A20315C1D007F2CF7 /* UserDB.swift in Sources */,
 				18456C7120315AB9007F2CF7 /* main.swift in Sources */,
+				18456C7E20316015007F2CF7 /* Administrator.swift in Sources */,
+				18456C822031619D007F2CF7 /* Product.swift in Sources */,
+				18456C8420317729007F2CF7 /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
