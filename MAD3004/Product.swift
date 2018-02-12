@@ -15,7 +15,6 @@ public class Product{
     fileprivate var productType: Character?
     
     init(){
-        
     }
     
     init(_ productID: String,_ productName: String,_ productPrice: Float,_ productType: Character){
