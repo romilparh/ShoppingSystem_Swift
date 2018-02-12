@@ -9,3 +9,7 @@
 import Foundation
 
 // Main Starts here
+// What's Left:
+// Administrator Directly Adding Product to list
+// Calculate price in shoppingCart
+// Write Main Function
