@@ -11,13 +11,13 @@ import Foundation
 class ShoppingCart: Product{
     var cartID: String?
     var quantity: Int?
-    // Define an array here
+    // Define an array here for product list in cart (Product type, I think, to save values)
 
     func addItemInCart(){
         // Pseudo Code: ProductID + Quantity
     }
     
-    func updateQuantity(quantity: Int){
+    func updateQuantity(_ quantity: Int){
         self.quantity = quantity
     }
     
