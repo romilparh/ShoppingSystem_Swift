@@ -35,7 +35,7 @@ class ShipmentInfo: Order{
         print("Shipping Status: \(shippingStatus)")
     }
     
-    func updateShippingInfo(){
-        // Pseudo code: Update status
+    func updateShippingInfo(status: Character){
+        self.shippingStatus = status
     }
 }
