@@ -11,10 +11,9 @@ import Foundation
 class ShoppingCart: Product{
     var cartID: String?
     var quantity: Int?
-    // Define an array here for product list in cart (Product type, I think, to save values)
+    var productList = [Product]()
 
     func addItemInCart(){
-        // Pseudo Code: ProductID + Quantity
     }
     
     func updateQuantity(_ quantity: Int){
