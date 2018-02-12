@@ -43,8 +43,12 @@ class User{
         print("Address: \(address)")
     }
     
-    func updateDetails(){
-        // Function to change password or address
+    fileprivate func updatePasswordDetails(password: String){
+        self.password = password
+    }
+    
+    fileprivate func updateAddressDetails(address: String){
+        self.address = address
     }
 }
 
