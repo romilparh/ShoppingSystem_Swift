@@ -22,6 +22,11 @@ class ShoppingCart: Product{
     
     func viewCartDetails(){
         // Pseudo Code: Cart ID + Product ID + Product Name + Quantity for All Product IDs in Cart IDs
+        print("Cart ID = \(cartID)")
+        print("ProductID = \(productID)")
+        print("Product Price = \(productPrice)")
+        print("Quantity = \(quantity)")
+        
     }
     
     override init(){
