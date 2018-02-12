@@ -11,8 +11,9 @@ import Foundation
 class Order: ShoppingCart{
     var orderID: String?
     var address: String?
-    var subTotal: Float?
-    var dateOrdered: Date?
+    
+    fileprivate var subTotal: Float?
+    fileprivate var dateOrdered: Date?
     
     func calcPrice() -> Float{
         // Pseudo Code: Fetch Items and Price, Add Price of All
@@ -31,8 +32,9 @@ class Order: ShoppingCart{
         self.subTotal = calcPrice()
     }
     
-    init(_ orderID: String){
+    init(_ orderID: String,_ address: String){
         self.orderID = orderID
+        self.address = address
         super.init()
     }
     

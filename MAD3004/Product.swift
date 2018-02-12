@@ -12,7 +12,7 @@ public class Product{
     var productID: String?
     var productName: String?
     var productPrice: Float?
-    var productType: Character?
+    fileprivate var productType: Character?
     
     init(){
         

@@ -23,4 +23,8 @@ class Customer: User{
         self.cardCVV = cardCVV
         super.init(userID)
     }
+    
+    func updateProfile(){
+        // Pseudo Code: Goes here
+    }
 }

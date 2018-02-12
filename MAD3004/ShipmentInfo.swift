@@ -18,15 +18,19 @@ class ShipmentInfo: Order{
         super.init()
     }
     
-    init(_ shippingID: String,_ shippingType: Character,_ shippingCost: Float,_ shippingStatus: Character,_ orderID: String){
+    init(_ shippingID: String,_ shippingType: Character,_ shippingCost: Float,_ shippingStatus: Character,_ orderID: String,_ address: String){
         self.shippingID = shippingID
         self.shippingType = shippingType
         self.shippingCost = shippingCost
         self.shippingStatus = shippingStatus
-        super.init(orderID)
+        super.init(orderID, address)
     }
     
     func showShippingStatus(){
         // Pseudo Code: Write a function to display status
+    }
+    
+    func updateShippingInfo(){
+        // Pseudo code: Update status
     }
 }
