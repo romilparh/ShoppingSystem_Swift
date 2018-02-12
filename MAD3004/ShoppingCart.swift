@@ -13,7 +13,7 @@ class ShoppingCart: Product{
     var quantity: Int?
     var productList = [Product]()
 
-    func addItemInCart(productObject: Product){
+    func addItemInCart(_ productObject: Product){
         self.productList.append(productObject)
     }
     
