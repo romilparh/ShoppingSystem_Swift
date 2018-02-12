@@ -39,6 +39,12 @@ class Order: ShoppingCart{
     }
     
     func showDetails(){
-        // Print All values here for all variables
+        print("Order ID: \(orderID)")
+        print("Address: \(address)")
+        print("Date Ordered: \(dateOrdered)")
+        print("ProductID: \(productID)")
+        print("Quantity: \(quantity)")
+        print("Price: \(productPrice)")
+        print("SubTotal: \(subTotal)")
     }
 }
