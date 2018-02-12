@@ -27,7 +27,12 @@ class ShipmentInfo: Order{
     }
     
     func showShippingStatus(){
-        // Pseudo Code: Write a function to display status
+        print("Order ID: \(orderID)")
+        print("Address: \(address)")
+        print("Shipping ID: \(shippingID)")
+        print("Shipping Type: \(shippingType)")
+        print("Shipping Cost: \(shippingCost)")
+        print("Shipping Status: \(shippingStatus)")
     }
     
     func updateShippingInfo(){
