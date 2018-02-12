@@ -11,6 +11,7 @@ import Foundation
 class User{
     var userID: String?
     var name: String?
+    var phoneNumber:Int?
     fileprivate var address: String?
     fileprivate var password: String?
     fileprivate var loginStatus: Bool?
@@ -19,12 +20,13 @@ class User{
     init(){
     }
     
-    init(_ userID: String,_ name: String,_ address: String,_ password: String,_ eMail: String){
+    init(_ userID: String,_ name: String,_ address: String,_ password: String,_ eMail: String,_ phoneNumber: Int){
         self.userID = userID
         self.name = name
         self.address = address
         self.password = password
         self.eMail = eMail
+        self.phoneNumber = phoneNumber
         self.loginStatus = verifyLogin()
     }
     
