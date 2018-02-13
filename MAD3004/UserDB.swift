@@ -12,10 +12,11 @@ class User{
     var userID: String?
     var name: String?
     var phoneNumber:Int?
-    fileprivate var address: String?
-    fileprivate var password: String?
-    fileprivate var loginStatus: Bool?
-    fileprivate var eMail: String?
+    
+    private var password: String?
+    private var address: String?
+    private var loginStatus: Bool?
+    private var eMail: String?
     
     init(){
     }
@@ -27,15 +28,16 @@ class User{
         self.password = password
         self.eMail = eMail
         self.phoneNumber = phoneNumber
-        self.loginStatus = verifyLogin()
     }
     
     init(_ userID: String){
         self.userID = userID
     }
     
-    fileprivate func verifyLogin() -> Bool{
-        return true
+    func verifyLogin(_ userID: String,_ password: String) -> Bool{
+        return
+            self.userID == userID &&
+            self.password == password
     }
     
     func showUserDetails(){
