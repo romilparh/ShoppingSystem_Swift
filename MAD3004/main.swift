@@ -11,9 +11,5 @@ import Foundation
 // Main Starts here
 // What's Left:
 
-// Inherit Customer in Cart
-// Function for AddItemInCart and ProductList Dictionary
-// Delete calculating total
 // Get total of items
-// Verify Login
 // Verification of all inputs
