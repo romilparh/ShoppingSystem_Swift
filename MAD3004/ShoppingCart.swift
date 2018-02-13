@@ -8,17 +8,25 @@
 
 import Foundation
 
-class ShoppingCart{
+class ShoppingCart: Customer{
     var cartID: String?
-    var quantity: Int?
+    var index: Int = 0
+    var quantity = [Int]()
     var productList = [Product]()
 
-    func addItemInCart(_ productObject: Product){
+    func addItemInCart(_ quantity: Int,_ productObject: Product){
         self.productList.append(productObject)
+        self.quantity.append(quantity)
     }
     
-    func updateQuantity(_ quantity: Int){
-        self.quantity = quantity
+    
+    func updateQuantity(_ quantity: Int, productEntered: Product){
+        for i in productList{
+            if (i.equals(compareTo: productEntered)){
+                self.quantity[index] = quantity
+            }
+            index = index + 1
+        }
     }
     
     func viewCartDetails(){
@@ -27,11 +35,12 @@ class ShoppingCart{
         
     }
     
-    init(){
+    override init(){
+        super.init()
     }
     
-    init(_ cartID: String,_ quantity: Int){
+    init(_ cartID: String,_ quantity: Int,_ userID: String){
         self.cartID = cartID
-        self.quantity = quantity
+        super.init(userID)
     }
 }
