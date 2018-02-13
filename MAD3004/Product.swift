@@ -42,6 +42,4 @@ public class Product{
         print("Product Price: \(productPrice)")
         print("Product Type: \(productType)")
     }
-//    public var productList :  [Int: Product] = [0:Product ("1", "Electric Motor", 1000.30, "E"), 1: Product("2", "Electric Trimmer", 130.75, "E")]
-    // Define in main
 }
