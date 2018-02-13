@@ -31,7 +31,7 @@ class ShoppingCart: Customer{
     
     func viewCartDetails(){
         print("Cart ID = \(cartID)")
-        print("Quantity = \(quantity)")
+        print("Product = \(productList) Quantity = \(quantity)")
         
     }
     
@@ -39,7 +39,7 @@ class ShoppingCart: Customer{
         super.init()
     }
     
-    init(_ cartID: String,_ quantity: Int,_ userID: String){
+    init(_ cartID: String,_ userID: String){
         self.cartID = cartID
         super.init(userID)
     }
