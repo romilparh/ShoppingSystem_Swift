@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ShoppingCart: Product{
+class ShoppingCart{
     var cartID: String?
     var quantity: Int?
     var productList = [Product]()
@@ -22,21 +22,17 @@ class ShoppingCart: Product{
     }
     
     func viewCartDetails(){
-        // Pseudo Code: Cart ID + Product ID + Product Name + Quantity for All Product IDs in Cart IDs
         print("Cart ID = \(cartID)")
-        print("ProductID = \(productID)")
         print("Product Price = \(productPrice)")
         print("Quantity = \(quantity)")
         
     }
     
-    override init(){
-        super.init()
+    init(){
     }
     
-    init(_ cartID: String,_ quantity: Int,_ productID: String,_ productPrice: Float){
+    init(_ cartID: String,_ quantity: Int){
         self.cartID = cartID
         self.quantity = quantity
-        super.init(productID, productPrice)
     }
 }
