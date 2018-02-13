@@ -10,7 +10,9 @@ import Foundation
 
 // Main Starts here
 // What's Left:
-// Administrator Directly Adding Product to list
-// Calculate price in shoppingCart
-// Write Main Function
-// Make Presentation
+
+// Inherit Customer in Cart
+// Function for AddItemInCart and ProductList Dictionary
+// Delete calculating total
+// Get total of items
+// Verify Login
