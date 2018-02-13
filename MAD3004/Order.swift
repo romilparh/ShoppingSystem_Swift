@@ -12,7 +12,6 @@ class Order: ShoppingCart{
     var orderID: String?
     var address: String?
     
-    fileprivate var subTotal: Float?
     fileprivate var dateOrdered: Date?
     
     override init(){
@@ -36,6 +35,5 @@ class Order: ShoppingCart{
         print("Order ID: \(orderID)")
         print("Address: \(address)")
         print("Date Ordered: \(dateOrdered)")
-        print("SubTotal: \(subTotal)")
     }
 }
