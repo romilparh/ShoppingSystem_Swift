@@ -23,7 +23,6 @@ class ShoppingCart{
     
     func viewCartDetails(){
         print("Cart ID = \(cartID)")
-        print("Product Price = \(productPrice)")
         print("Quantity = \(quantity)")
         
     }

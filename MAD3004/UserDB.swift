@@ -44,11 +44,11 @@ class User{
         print("Address: \(address)")
     }
     
-    fileprivate func updatePasswordDetails(_ password: String){
+    private func updatePasswordDetails(_ password: String){
         self.password = password
     }
     
-    fileprivate func updateAddressDetails(_ address: String){
+    private func updateAddressDetails(_ address: String){
         self.address = address
     }
 }
