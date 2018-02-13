@@ -16,3 +16,4 @@ import Foundation
 // Delete calculating total
 // Get total of items
 // Verify Login
+// Verification of all inputs
