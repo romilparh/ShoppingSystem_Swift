@@ -10,7 +10,7 @@ import Foundation
 
 class Administrator: User{
 
-    fileprivate  var verificationGrid: Int?
+    private  var verificationGrid: Int?
     
     override init(){
         super.init()
