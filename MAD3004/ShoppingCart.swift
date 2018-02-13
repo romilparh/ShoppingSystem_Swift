@@ -20,11 +20,11 @@ class ShoppingCart: Customer{
         self.quantity.append(quantity)
     }
     
-    func countProductQuantity() -> Int{
+    func countProductQuantity() -> Int {
         for i in quantity{
             self.productCount+=i
         }
-        return self.productCount
+        return productCount
     }
     
     func updateQuantity(_ quantity: Int, productEntered: Product){
