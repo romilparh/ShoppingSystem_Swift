@@ -33,4 +33,8 @@ class Customer: User{
         self.cardType = cardType
     }
     
+    override init(_ userID: String){
+        super.init(userID)
+    }
+    
 }
