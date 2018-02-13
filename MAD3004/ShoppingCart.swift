@@ -11,6 +11,7 @@ import Foundation
 class ShoppingCart: Customer{
     var cartID: String?
     var index: Int = 0
+    var productCount: Int = 0
     var quantity = [Int]()
     var productList = [Product]()
 
@@ -19,6 +20,12 @@ class ShoppingCart: Customer{
         self.quantity.append(quantity)
     }
     
+    func countProductQuantity() -> Int{
+        for i in quantity{
+            self.productCount+=i
+        }
+        return self.productCount
+    }
     
     func updateQuantity(_ quantity: Int, productEntered: Product){
         for i in productList{
