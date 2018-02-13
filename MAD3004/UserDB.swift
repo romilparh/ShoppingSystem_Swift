@@ -22,12 +22,18 @@ class User{
     }
     
     init(_ userID: String,_ name: String,_ address: String,_ password: String,_ eMail: String,_ phoneNumber: Int){
-        self.userID = userID
-        self.name = name
-        self.address = address
-        self.password = password
-        self.eMail = eMail
-        self.phoneNumber = phoneNumber
+        if(isValidEmail(eMail)){
+            self.userID = userID
+            self.name = name
+            self.address = address
+            self.password = password
+            self.eMail = eMail
+            self.phoneNumber = phoneNumber
+        }
+        else{
+            print("Invalid Declaration of eMail")
+        }
+        
     }
     
     init(_ userID: String){
@@ -38,6 +44,13 @@ class User{
         return
             self.userID == userID &&
             self.password == password
+    }
+    
+    func isValidEmail(_ testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
     }
     
     func showUserDetails(){
