@@ -29,6 +29,13 @@ public class Product{
         self.productPrice = productPrice
     }
     
+    func equals(compareTo: Product) -> Bool{
+        return
+            self.productID == compareTo.productID &&
+                self.productName == compareTo.productName &&
+                self.productPrice == compareTo.productPrice
+    }
+    
     func showProducts(){
         print("Product ID: \(productID)")
         print("Product Name: \(productName)")
