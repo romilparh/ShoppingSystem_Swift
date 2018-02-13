@@ -21,8 +21,4 @@ class Administrator: User{
         super.init(userID)
     }
     
-    func addProduct(_ productID: String,_ productName: String,_ productPrice: Float,_ productType: Character){
-        // Pseudo Code
-//        Product.productList = productList.append(Product.init(productID, productName, productPrice, productType))
-    }
 }
