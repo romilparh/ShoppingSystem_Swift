@@ -51,19 +51,3 @@ class ShoppingCart: Customer{
         super.init(userID)
     }
 }
-
-extension Float
-{
-    func currency() -> String
-    {
-        return String.init(format: "$%0.2f", self)
-    }
-}
-
-extension Int
-{
-    func unit() -> String
-    {
-        return String.init(format: "%d Units", self)
-}
-}
