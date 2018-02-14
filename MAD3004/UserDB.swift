@@ -21,9 +21,9 @@ class User{
     init(){
     }
     
-    init(_ userID: String,_ name: String,_ address: String,_ password: String,_ eMail: String,_ phoneNumber: Int){
+    init(_ userIDS: String,_ name: String,_ address: String,_ password: String,_ eMail: String,_ phoneNumber: Int){
         if(isValidEmail(eMail)){
-            self.userID = userID
+            self.userID = userIDS
             self.name = name
             self.address = address
             self.password = password
@@ -45,7 +45,7 @@ class User{
     }
     
     func isValidEmail(_ testStr:String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+.com"
         
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)

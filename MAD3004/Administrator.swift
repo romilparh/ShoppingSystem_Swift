@@ -21,5 +21,11 @@ class Administrator: User{
         super.init(userID)
     }
     
+    func showAdminDetails(){
+        print("*********************")
+        print("User ID: \(userID!)")
+        print("Administrator Verification Grid: \(verificationGrid!)")
+        print("*********************")
+    }
 }
 

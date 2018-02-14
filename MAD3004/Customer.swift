@@ -26,16 +26,22 @@ class Customer: User{
         super.init(userID)
     }
     
-    fileprivate func updateCardInfo(_ cardNumber: Int,_ cardExpiry: Date,_ cardCVV: Int,_ cardType: Character){
+    func updateCardInfo(_ cardNumber: Int,_ cardExpiry: Date,_ cardCVV: Int,_ cardType: Character){
         self.cardNumber = cardNumber
         self.cardExpiry = cardExpiry
         self.cardCVV = cardCVV
         self.cardType = cardType
+        print("Card Details Updated for User: \(userID!)")
     }
     
     override init(_ userID: String){
         super.init(userID)
     }
     
+    func showCustomerDetails(){
+        print("*********************")
+        print("User ID: \(userID!)")
+        print("*********************")
+    }
 }
 

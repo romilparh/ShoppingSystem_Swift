@@ -6,6 +6,8 @@
 //  Copyright © 2018 ShadyBond. All rights reserved.
 //  Github Link: github.com/romilparh/MAD3004_FP
 
+//  dateShipped Calender.current.date(byAdding: .day, value:q, to: Date())
+
 import Foundation
 
 // Product Objects
@@ -23,6 +25,11 @@ var userOne: User = User("1", "Romil", "Brampton", "Admin123", "romilparhwal007@
 var userTwo: User = User("2", "Gagandeep Brar", "Brampton", "Admin987", "gaganbrar0808@gmail.com", 53425)
 
 var userThree: User = User("3", "Jagdeep Singh", "Toronto", "Jagdeep123", "jagdeepsingh@gmail.com", 848382)
+
+// Customer Objects
+var customerOne: Customer = Customer(24312332423, Date(), 232, "D", "2")
+
+var customerTwo: Customer = Customer(24231453233, Date(), 553, "C", "3")
 
 // Administrator Objects
 var administratorOne: Administrator = Administrator(432314253, "1")
@@ -48,6 +55,7 @@ print("USER DETAILS")
 userOne.showUserDetails()
 userTwo.showUserDetails()
 userThree.showUserDetails()
+print("Valid Login of \(userOne.name!) \(userOne.verifyLogin("1", "Admin122"))")
 
 // Product Function Calls
 print("PRODUCTS LIST")
@@ -80,3 +88,12 @@ shipmentInfoTwo.showShippingStatus()
 print("Updation of Shipping Status for Order 2")
 shipmentInfoTwo.updateShippingInfo("S")
 shipmentInfoTwo.showShippingStatus()
+
+// Administrator Function Calls
+administratorOne.showAdminDetails()
+
+// Customer Function Calls
+customerOne.showCustomerDetails()
+customerOne.updateCardInfo(3243423478389, Date(), 332, "C")
+customerOne.showCustomerDetails()
+customerTwo.showCustomerDetails()

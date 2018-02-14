@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182F8CCF2033C75900D054A6 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F8CCE2033C75900D054A6 /* Extension.swift */; };
 		18456C7120315AB9007F2CF7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C7020315AB9007F2CF7 /* main.swift */; };
 		18456C7A20315C1D007F2CF7 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C7920315C1D007F2CF7 /* UserDB.swift */; };
 		18456C7C20315E19007F2CF7 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18456C7B20315E19007F2CF7 /* Customer.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		182F8CCE2033C75900D054A6 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		18456C6D20315AB9007F2CF7 /* MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		18456C7020315AB9007F2CF7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		18456C7920315C1D007F2CF7 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				18456C812031619D007F2CF7 /* Product.swift */,
 				18456C8320317729007F2CF7 /* Order.swift */,
 				18456C8520317A6E007F2CF7 /* ShipmentInfo.swift */,
+				182F8CCE2033C75900D054A6 /* Extension.swift */,
 			);
 			path = MAD3004;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182F8CCF2033C75900D054A6 /* Extension.swift in Sources */,
 				18456C80203160EE007F2CF7 /* ShoppingCart.swift in Sources */,
 				18456C8620317A6E007F2CF7 /* ShipmentInfo.swift in Sources */,
 				18456C7C20315E19007F2CF7 /* Customer.swift in Sources */,
