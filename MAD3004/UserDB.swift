@@ -52,9 +52,11 @@ class User{
     }
     
     func showUserDetails(){
-        print("Name: \(name)")
-        print("eMail: \(eMail)")
-        print("Address: \(address)")
+        print("****************************************************************************************")
+        print("Name: \(name!)")
+        print("eMail: \(eMail!)")
+        print("Address: \(address!)")
+        print("****************************************************************************************")
     }
     
     private func updatePasswordDetails(_ password: String){

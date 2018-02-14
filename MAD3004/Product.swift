@@ -36,11 +36,13 @@ public class Product{
                 self.productPrice == compareTo.productPrice
     }
     
-    func showProducts(){
-        print("Product ID: \(productID)")
-        print("Product Name: \(productName)")
-        print("Product Price: \(productPrice)")
-        print("Product Type: \(productType)")
+    func showProductInfo(){
+        print("#############################")
+        print("Product ID: \(productID!)")
+        print("Product Name: \(productName!)")
+        print("Product Price: \(productPrice!.currency())")
+        print("Product Type: \(productType!)")
+        print("#############################")
     }
 }
 

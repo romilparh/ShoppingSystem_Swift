@@ -30,9 +30,20 @@ class Order: ShoppingCart{
     }
     
     func showDetails(){
-        print("Order ID: \(orderID)")
-        print("Address: \(address)")
-        print("Date Ordered: \(dateOrdered)")
+        print("****************************************************************************************")
+        print("Order ID: \(orderID!)")
+        print("Address: \(address!)")
+        // print("Date Ordered: \(dateOrdered!)")
+        print("Date Ordered: \(self.getFormattedDate(date: self.dateOrdered!))")
+        print("****************************************************************************************")
+    }
+    
+    private func getFormattedDate(date: Date) -> String
+    {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "EEEE, dd MMMM, yyyy"
+        let formattedDate = dateFormatterPrint.string(from: date)
+        return formattedDate
     }
 }
 
