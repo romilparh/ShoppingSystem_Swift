@@ -12,10 +12,9 @@ public class Product{
     var productID: String?
     var productName: String?
     var productPrice: Float?
-    fileprivate var productType: Character?
+    private var productType: Character?
     
     init(){
-        
     }
     
     init(_ productID: String,_ productName: String,_ productPrice: Float,_ productType: Character){
@@ -30,12 +29,20 @@ public class Product{
         self.productPrice = productPrice
     }
     
-    func showProducts(){
-        print("Product ID: \(productID)")
-        print("Product Name: \(productName)")
-        print("Product Price: \(productPrice)")
-        print("Product Type: \(productType)")
+    func equals(compareTo: Product) -> Bool{
+        return
+            self.productID == compareTo.productID &&
+                self.productName == compareTo.productName &&
+                self.productPrice == compareTo.productPrice
     }
-//    public var productList :  [Int: Product] = [0:Product ("1", "Electric Motor", 1000.30, "E"), 1: Product("2", "Electric Trimmer", 130.75, "E")]
-    // Define in main
+    
+    func showProductInfo(){
+        print("#############################")
+        print("Product ID: \(productID!)")
+        print("Product Name: \(productName!)")
+        print("Product Price: \(productPrice!.currency())")
+        print("Product Type: \(productType!)")
+        print("#############################")
+    }
 }
+

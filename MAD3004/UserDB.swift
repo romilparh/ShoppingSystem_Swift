@@ -11,43 +11,59 @@ import Foundation
 class User{
     var userID: String?
     var name: String?
-    fileprivate var address: String?
-    fileprivate var password: String?
-    fileprivate var loginStatus: Bool?
-    fileprivate var eMail: String?
+    var phoneNumber:Int?
+    
+    private var password: String?
+    private var address: String?
+    private var loginStatus: Bool?
+    private var eMail: String?
     
     init(){
-        
     }
     
-    init(_ userID: String,_ name: String,_ address: String,_ password: String,_ eMail: String){
-        self.userID = userID
-        self.name = name
-        self.address = address
-        self.password = password
-        self.eMail = eMail
-        self.loginStatus = verifyLogin()
+    init(_ userID: String,_ name: String,_ address: String,_ password: String,_ eMail: String,_ phoneNumber: Int){
+        if(isValidEmail(eMail)){
+            self.userID = userID
+            self.name = name
+            self.address = address
+            self.password = password
+            self.eMail = eMail
+            self.phoneNumber = phoneNumber
+        } else{
+            print("Not Valid Input")
+        }
     }
     
     init(_ userID: String){
         self.userID = userID
     }
     
-    fileprivate func verifyLogin() -> Bool{
-        return true
+    func verifyLogin(_ userID: String,_ password: String) -> Bool{
+        return
+            self.userID == userID &&
+                self.password == password
+    }
+    
+    func isValidEmail(_ testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
     }
     
     func showUserDetails(){
-        print("Name: \(name)")
-        print("eMail: \(eMail)")
-        print("Address: \(address)")
+        print("****************************************************************************************")
+        print("Name: \(name!)")
+        print("eMail: \(eMail!)")
+        print("Address: \(address!)")
+        print("****************************************************************************************")
     }
     
-    fileprivate func updatePasswordDetails(_ password: String){
+    private func updatePasswordDetails(_ password: String){
         self.password = password
     }
     
-    fileprivate func updateAddressDetails(_ address: String){
+    private func updateAddressDetails(_ address: String){
         self.address = address
     }
 }
