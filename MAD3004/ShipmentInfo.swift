@@ -31,7 +31,7 @@ class ShipmentInfo: Order{
         print("Order ID: \(orderID!)")
         print("Shipping ID: \(shippingID!)")
         print("Shipping Type: \(shippingType!)")
-        print("Shipping Cost: \(shippingCost!)")
+        print("Shipping Cost: \(shippingCost!.currency())")
         print("Shipping Status: \(shippingStatus!)")
         print("********************")
     }
