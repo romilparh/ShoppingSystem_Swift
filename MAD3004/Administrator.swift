@@ -9,7 +9,7 @@
 import Foundation
 
 class Administrator: User{
-
+    
     private  var verificationGrid: Int?
     
     override init(){
@@ -22,3 +22,4 @@ class Administrator: User{
     }
     
 }
+
