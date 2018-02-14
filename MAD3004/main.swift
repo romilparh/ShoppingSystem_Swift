@@ -43,10 +43,39 @@ var shipmentInfoOne: ShipmentInfo = ShipmentInfo("1", "C", 13.43, "1")
 
 var shipmentInfoTwo: ShipmentInfo = ShipmentInfo("2", "C", 11.23, "2")
 
-// Shopping Cart Function Calls
+// User Function Calls
+print("USER DETAILS")
+userOne.showUserDetails()
+userTwo.showUserDetails()
+userThree.showUserDetails()
 
+// Product Function Calls
+print("PRODUCTS LIST")
+productOne.showProductInfo()
+productTwo.showProductInfo()
+productThree.showProductInfo()
+productFour.showProductInfo()
+
+// Shopping Cart Function Calls
+print("**************************** Shopping Cart Details ********************************")
 shoppingCartOne.item.append(Item(product: productThree, quantity: 3))
-shoppingCartOne.item.append(Item(product: productThree, quantity: 3))
-shoppingCartOne.item.append(Item(product: productThree, quantity: 3))
+shoppingCartOne.item.append(Item(product: productTwo, quantity: 5))
+shoppingCartOne.item.append(Item(product: productOne, quantity: 1))
 shoppingCartOne.printCartDetails()
 
+shoppingCartTwo.item.append(Item(product: productThree, quantity: 2))
+shoppingCartTwo.item.append(Item(product: productFour, quantity: 3))
+shoppingCartTwo.printCartDetails()
+
+// Order Function Calls
+print("ORDER DETAILS")
+orderOne.showDetails()
+orderTwo.showDetails()
+
+// Shipment Info Function Calls
+
+print("ORDER SHIPMENT STATUS")
+shipmentInfoOne.showShippingStatus()
+shipmentInfoTwo.showShippingStatus()
+shipmentInfoTwo.updateShippingInfo("S")
+shipmentInfoTwo.showShippingStatus()
