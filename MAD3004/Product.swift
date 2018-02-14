@@ -40,7 +40,7 @@ public class Product{
         print("#############################")
         print("Product ID: \(productID!)")
         print("Product Name: \(productName!)")
-        print("Product Price: \(productPrice!)")
+        print("Product Price: \(productPrice!.currency())")
         print("Product Type: \(productType!)")
         print("#############################")
     }
