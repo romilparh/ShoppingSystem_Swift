@@ -18,24 +18,26 @@ class ShipmentInfo: Order{
         super.init()
     }
     
-    init(_ shippingID: String,_ shippingType: Character,_ shippingCost: Float,_ shippingStatus: Character,_ orderID: String,_ address: String){
+    init(_ shippingID: String,_ shippingType: Character,_ shippingCost: Float,_ orderID: String){
         self.shippingID = shippingID
         self.shippingType = shippingType
         self.shippingCost = shippingCost
-        self.shippingStatus = shippingStatus
-        super.init(orderID, address)
+        self.shippingStatus = "P"
+        super.init(orderID)
     }
     
     func showShippingStatus(){
-        print("Order ID: \(orderID)")
-        print("Address: \(address)")
-        print("Shipping ID: \(shippingID)")
-        print("Shipping Type: \(shippingType)")
-        print("Shipping Cost: \(shippingCost)")
-        print("Shipping Status: \(shippingStatus)")
+        print("********************")
+        print("Order ID: \(orderID!)")
+        print("Shipping ID: \(shippingID!)")
+        print("Shipping Type: \(shippingType!)")
+        print("Shipping Cost: \(shippingCost!.currency())")
+        print("Shipping Status: \(shippingStatus!)")
+        print("********************")
     }
     
-    func updateShippingInfo(status: Character){
+    func updateShippingInfo(_ status: Character){
         self.shippingStatus = status
     }
 }
+
