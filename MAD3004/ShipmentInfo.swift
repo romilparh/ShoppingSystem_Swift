@@ -27,14 +27,16 @@ class ShipmentInfo: Order{
     }
     
     func showShippingStatus(){
-        print("Order ID: \(orderID)")
-        print("Shipping ID: \(shippingID)")
-        print("Shipping Type: \(shippingType)")
-        print("Shipping Cost: \(shippingCost)")
-        print("Shipping Status: \(shippingStatus)")
+        print("********************")
+        print("Order ID: \(orderID!)")
+        print("Shipping ID: \(shippingID!)")
+        print("Shipping Type: \(shippingType!)")
+        print("Shipping Cost: \(shippingCost!)")
+        print("Shipping Status: \(shippingStatus!)")
+        print("********************")
     }
     
-    func updateShippingInfo(status: Character){
+    func updateShippingInfo(_ status: Character){
         self.shippingStatus = status
     }
 }

@@ -31,10 +31,15 @@ class ShoppingCart: Customer{
     
     func printCartDetails()
     {
+        print("Cart ID: \(cartID!)")
+        print("*********************")
+        print("Product ID","Product Name","Quantity","Unit Cost","Sub Total", separator:"\t\t\t\t")
         for s in item
         {
-            print(s.product.productID, s.product.productName, s.product.productPrice, s.quantity, s.subTotal)
+            //print("Product ID: \(s.product.productID!) Product Name: \(s.product.productName!) Product Quantity: \(s.quantity) Total Cost: \(s.subTotal)")
+            print(s.product.productID!, s.product.productName!, s.product.productPrice!.currency(), s.quantity.unit(), s.subTotal.currency(),separator:"\t\t\t\t")
         }
+        print("****************************************************************************************")
     }
     
     override init(){
@@ -47,3 +52,18 @@ class ShoppingCart: Customer{
     }
 }
 
+extension Float
+{
+    func currency() -> String
+    {
+        return String.init(format: "$%0.2f", self)
+    }
+}
+
+extension Int
+{
+    func unit() -> String
+    {
+        return String.init(format: "%d Units", self)
+}
+}
