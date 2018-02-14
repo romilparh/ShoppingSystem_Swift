@@ -29,11 +29,9 @@ class User{
             self.password = password
             self.eMail = eMail
             self.phoneNumber = phoneNumber
+        } else{
+            print("Not Valid Input")
         }
-        else{
-            print("Invalid Declaration of eMail")
-        }
-        
     }
     
     init(_ userID: String){
@@ -43,7 +41,7 @@ class User{
     func verifyLogin(_ userID: String,_ password: String) -> Bool{
         return
             self.userID == userID &&
-            self.password == password
+                self.password == password
     }
     
     func isValidEmail(_ testStr:String) -> Bool {
