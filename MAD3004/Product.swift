@@ -12,7 +12,7 @@ public class Product{
     var productID: String?
     var productName: String?
     var productPrice: Float?
-    fileprivate var productType: Character?
+    private var productType: Character?
     
     init(){
     }
@@ -43,3 +43,4 @@ public class Product{
         print("Product Type: \(productType)")
     }
 }
+
