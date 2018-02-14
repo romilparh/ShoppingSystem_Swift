@@ -11,30 +11,21 @@ import Foundation
 class Order: ShoppingCart{
     var orderID: String?
     var address: String?
-    
-    fileprivate var subTotal: Float?
-    fileprivate var dateOrdered: Date?
-    
-    func calcPrice() -> Float{
-        // Pseudo Code: Fetch Items and Price, Add Price of All
-        return 0
-    }
+    private var dateOrdered: Date?
     
     override init(){
         super.init()
     }
     
-    init(_ orderID: String,_ address: String,_ dateOrdered: Date,_ subTotal: Float,_ cartID: String,_ quantity: Int,_ productID: String,_ productPrice: Float){
+    init(_ orderID: String,_ address: String,_ dateOrdered: Date,_ cartID: String,_ userID: String){
         self.orderID = orderID
         self.address = address
         self.dateOrdered = dateOrdered
-        super.init(cartID, quantity, productID, productPrice)
-        self.subTotal = calcPrice()
+        super.init(cartID, userID)
     }
     
-    init(_ orderID: String,_ address: String){
+    init(_ orderID: String){
         self.orderID = orderID
-        self.address = address
         super.init()
     }
     
@@ -42,9 +33,6 @@ class Order: ShoppingCart{
         print("Order ID: \(orderID)")
         print("Address: \(address)")
         print("Date Ordered: \(dateOrdered)")
-        print("ProductID: \(productID)")
-        print("Quantity: \(quantity)")
-        print("Price: \(productPrice)")
-        print("SubTotal: \(subTotal)")
     }
 }
+

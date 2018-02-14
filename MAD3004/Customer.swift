@@ -9,10 +9,10 @@
 import Foundation
 
 class Customer: User{
-    fileprivate var cardNumber: Int?
-    fileprivate var cardExpiry: Date?
-    fileprivate var cardCVV: Int?
-    fileprivate var cardType: Character?
+    private var cardNumber: Int?
+    private var cardExpiry: Date?
+    private var cardCVV: Int?
+    private var cardType: Character? // D for debit and C for credit
     
     override init(){
         super.init()
@@ -33,4 +33,9 @@ class Customer: User{
         self.cardType = cardType
     }
     
+    override init(_ userID: String){
+        super.init(userID)
+    }
+    
 }
+
