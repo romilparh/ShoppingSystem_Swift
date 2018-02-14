@@ -6,6 +6,12 @@
 //  Copyright © 2018 ShadyBond. All rights reserved.
 //  Github Link: github.com/romilparh/MAD3004_FP
 
+//  Total Addition of Shipping Cart
+//  Admin Details Show
+//  Customer Details Show
+//  dateShipped Calender.current.date(byAdding: .day, value:q, to: Date())
+//  user verify Login, eMail Valid
+
 import Foundation
 
 // Product Objects
