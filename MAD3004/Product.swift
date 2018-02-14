@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Product{
+class Product{
     var productID: String?
     var productName: String?
     var productPrice: Float?
@@ -24,17 +24,17 @@ public class Product{
         self.productType = productType
     }
     
-    init(_ productID: String,_ productPrice: Float){
-        self.productID = productID
-        self.productPrice = productPrice
-    }
+ //   init(_ productID: String,_ productPrice: Float){
+    //    self.productID = productID
+    //    self.productPrice = productPrice
+  //  }
     
-    func equals(compareTo: Product) -> Bool{
-        return
-            self.productID == compareTo.productID &&
-                self.productName == compareTo.productName &&
-                self.productPrice == compareTo.productPrice
-    }
+  //  func equals(compareTo: Product) -> Bool{
+   //     return
+   //         self.productID == compareTo.productID &&
+   //             self.productName == compareTo.productName &&
+    //            self.productPrice == compareTo.productPrice
+ //   }
     
     func showProductInfo(){
         print("#############################")

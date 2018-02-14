@@ -8,10 +8,10 @@
 
 import Foundation
 
+
 struct Item{
     var product: Product
     var quantity: Int
-    
     var subTotal: Float
     {
         get
@@ -25,8 +25,9 @@ class ShoppingCart: Customer{
     var cartID: String?
     var productCount: Int = 0
     var item = [Item]()
-    
-    private var index: Int = 0
+    var total: Float = 0
+    var tax: Float = 1.13
+    //private var index: Int = 0
     
     
     func printCartDetails()
@@ -38,7 +39,12 @@ class ShoppingCart: Customer{
         {
             //print("Product ID: \(s.product.productID!) Product Name: \(s.product.productName!) Product Quantity: \(s.quantity) Total Cost: \(s.subTotal)")
             print(s.product.productID!, s.product.productName!, s.product.productPrice!.currency(), s.quantity.unit(), s.subTotal.currency(),separator:"\t\t\t\t")
+            self.total += s.subTotal
+            
         }
+        print("Total Amount: \(total.currency())")
+        self.total = self.total * self.tax
+        print("Total Amount Payable(with Tax): \(self.total.currency())")
         print("****************************************************************************************")
     }
     
