@@ -1,6 +1,6 @@
 //
 //  ShoppingCart.swift
-//  MAD3004
+//  MAD3004/Users/shadybond/Downloads/Final Project/Final_Project/main.swift
 //
 //  Created by Romil Parhwal on 2018-02-12.
 //  Copyright © 2018 ShadyBond. All rights reserved.
@@ -8,38 +8,33 @@
 
 import Foundation
 
+struct Item{
+    var product: Product
+    var quantity: Int
+    
+    var subTotal: Float
+    {
+        get
+        {
+            return self.product.productPrice! * Float(self.quantity)
+        }
+    }
+}
+
 class ShoppingCart: Customer{
     var cartID: String?
-    var index: Int = 0
     var productCount: Int = 0
-    var quantity = [Int]()
-    var productList = [Product]()
-
-    func addItemInCart(_ quantity: Int,_ productObject: Product){
-        self.productList.append(productObject)
-        self.quantity.append(quantity)
-    }
+    var item = [Item]()
     
-    func countProductQuantity() -> Int {
-        for i in quantity{
-            self.productCount+=i
+    private var index: Int = 0
+    
+    
+    func printCartDetails()
+    {
+        for s in item
+        {
+            print(s.product.productID, s.product.productName, s.product.productPrice, s.quantity, s.subTotal)
         }
-        return productCount
-    }
-    
-    func updateQuantity(_ quantity: Int, productEntered: Product){
-        for i in productList{
-            if (i.equals(compareTo: productEntered)){
-                self.quantity[index] = quantity
-            }
-            index = index + 1
-        }
-    }
-    
-    func viewCartDetails(){
-        print("Cart ID = \(cartID)")
-        print("Product = \(productList) Quantity = \(quantity)")
-        
     }
     
     override init(){
@@ -51,3 +46,4 @@ class ShoppingCart: Customer{
         super.init(userID)
     }
 }
+
