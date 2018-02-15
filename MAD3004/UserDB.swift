@@ -52,18 +52,18 @@ class User{
     }
     
     func showUserDetails(){
-        print("****************************************************************************************")
+        print(String.init(repeating: "*", count: 70))
         print("Name: \(name!)")
         print("eMail: \(eMail!)")
         print("Address: \(address!)")
         print("****************************************************************************************")
     }
     
-    private func updatePasswordDetails(_ password: String){
+    func updatePasswordDetails(_ password: String){
         self.password = password
     }
     
-    private func updateAddressDetails(_ address: String){
+    func updateAddressDetails(_ address: String){
         self.address = address
     }
 }

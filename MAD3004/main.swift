@@ -56,6 +56,7 @@ userOne.showUserDetails()
 userTwo.showUserDetails()
 userThree.showUserDetails()
 print("Valid Login of \(userOne.name!) \(userOne.verifyLogin("1", "Admin122"))")
+userOne.updatePasswordDetails("Abd")
 
 // Product Function Calls
 print("PRODUCTS LIST")
