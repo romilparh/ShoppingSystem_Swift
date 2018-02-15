@@ -15,7 +15,7 @@ class User{
     
     private var password: String?
     private var address: String?
-    private var loginStatus: Bool?
+    //private var loginStatus: Bool?
     private var eMail: String?
     
     init(){
