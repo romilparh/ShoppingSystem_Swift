@@ -1,0 +1,90 @@
+USER DETAILS
+****************************************************************************************
+Name: Romil
+eMail: romilparhwal007@gmail.com
+Address: Brampton
+****************************************************************************************
+****************************************************************************************
+Name: Gagandeep Brar
+eMail: gaganbrar0808@gmail.com
+Address: Brampton
+****************************************************************************************
+****************************************************************************************
+Name: Jagdeep Singh
+eMail: jagdeepsingh@gmail.com
+Address: Toronto
+****************************************************************************************
+PRODUCTS LIST
+#############################
+Product ID: 1
+Product Name: Trimmer
+Product Price: $32.40
+Product Type: E
+#############################
+#############################
+Product ID: 2
+Product Name: Heater
+Product Price: $130.50
+Product Type: E
+#############################
+#############################
+Product ID: 3
+Product Name: Olay Extra Moisturising Shampoo
+Product Price: $9.34
+Product Type: C
+#############################
+#############################
+Product ID: 4
+Product Name: Olay Conditioner
+Product Price: $5.44
+Product Type: C
+#############################
+**************************** Shopping Cart Details ********************************
+Cart ID: 1
+*********************
+Product ID				Product Name				Quantity				Unit Cost				Sub Total
+3				Olay Extra Moisturising Shampoo				$9.34				3 Units				$28.02
+2				Heater				$130.50				5 Units				$652.50
+1				Trimmer				$32.40				1 Units				$32.40
+****************************************************************************************
+Cart ID: 2
+*********************
+Product ID				Product Name				Quantity				Unit Cost				Sub Total
+3				Olay Extra Moisturising Shampoo				$9.34				2 Units				$18.68
+4				Olay Conditioner				$5.44				3 Units				$16.32
+****************************************************************************************
+ORDER DETAILS
+****************************************************************************************
+Order ID: 1
+Address: Brampton
+Date Ordered: Wednesday, 14 February, 2018
+****************************************************************************************
+****************************************************************************************
+Order ID: 2
+Address: Toronto
+Date Ordered: Wednesday, 14 February, 2018
+****************************************************************************************
+ORDER SHIPMENT STATUS
+********************
+Order ID: 1
+Shipping ID: 1
+Shipping Type: C
+Shipping Cost: $13.43
+Shipping Status: P
+********************
+********************
+Order ID: 2
+Shipping ID: 2
+Shipping Type: C
+Shipping Cost: $11.23
+Shipping Status: P
+********************
+Updation of Shipping Status for Order 2
+********************
+Order ID: 2
+Shipping ID: 2
+Shipping Type: C
+Shipping Cost: $11.23
+Shipping Status: S
+********************
+Program ended with exit code: 0
