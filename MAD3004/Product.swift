@@ -12,7 +12,7 @@ class Product{
     var productID: String?
     var productName: String?
     var productPrice: Float?
-    private var productType: Character?
+    private var productType: Character? // E for Electronics, C for Cosmetics
     
     init(){
     }
